@@ -2,7 +2,7 @@
 
 int main() {
     int target_num;
-    long long factorial_result = 1;
+    long long factorial_result = 1; // long long used for handling larger results
 
     printf("Enter a number to find factorial: ");
     scanf("%d", &target_num);
