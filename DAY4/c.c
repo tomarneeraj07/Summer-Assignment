@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int n, sum = 0, r, temp;
+    printf("Enter a 3-digit number: ");
+    scanf("%d", &n);
+    
+    temp = n;
+    while (temp > 0) {
+        r = temp % 10;
+        sum = sum + (r * r * r);
+        temp = temp / 10;
+    }
+    
+    if (n == sum) printf("Armstrong\n");
+    else printf("Not Armstrong\n");
+    return 0;
+}
